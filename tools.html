@@ -8,6 +8,7 @@
 <body>
 
 <nav>
+
 <div><b>CreatorToolkit</b></div>
 
 <div>
@@ -17,90 +18,57 @@
 <a href="affiliate.html">Affiliate</a>
 <a href="about.html">About</a>
 </div>
+
 </nav>
+
 
 <section class="section">
 
-<h1>Creator Tools</h1>
-<p>Generate viral content for Shorts & TikTok</p>
+<h1>AI Creator Tools</h1>
+
+
+<div class="generator-box">
+
+<p>Enter your video topic:</p>
+
+<input id="topic" class="topic-input" placeholder="Example: motivation, money, AI tools">
+
+<button class="generate-main" onclick="generateAll()">Generate Content</button>
+
+</div>
+
 
 <div class="grid">
 
+
 <div class="card">
-
-<h3>Hook Generator</h3>
-
-<input class="tool-input" id="topic" placeholder="Enter topic (example: money, motivation)">
-
-<button class="button" onclick="generateHook()">Generate Hook</button>
-
-<div class="result" id="hook"></div>
-
+<h3>Hook</h3>
+<div id="hook" class="result"></div>
 </div>
 
-
 <div class="card">
-
-<h3>Title Generator</h3>
-
-<input class="tool-input" placeholder="Topic">
-
-<button class="button">Generate Title</button>
-
-<div class="coming">Coming soon</div>
-
+<h3>Title</h3>
+<div id="title" class="result"></div>
 </div>
 
-
 <div class="card">
-
-<h3>Idea Generator</h3>
-
-<input class="tool-input" placeholder="Topic">
-
-<button class="button">Generate Ideas</button>
-
-<div class="coming">Coming soon</div>
-
+<h3>Idea</h3>
+<div id="idea" class="result"></div>
 </div>
 
-
 <div class="card">
-
-<h3>Script Generator</h3>
-
-<input class="tool-input" placeholder="Video topic">
-
-<button class="button">Generate Script</button>
-
-<div class="coming">Coming soon</div>
-
+<h3>Short Script</h3>
+<div id="script" class="result"></div>
 </div>
 
-
 <div class="card">
-
-<h3>Hashtag Generator</h3>
-
-<input class="tool-input" placeholder="Video topic">
-
-<button class="button">Generate Hashtags</button>
-
-<div class="coming">Coming soon</div>
-
+<h3>Hashtags</h3>
+<div id="hashtags" class="result"></div>
 </div>
 
-
 <div class="card">
-
-<h3>Thumbnail Text Generator</h3>
-
-<input class="tool-input" placeholder="Video topic">
-
-<button class="button">Generate Text</button>
-
-<div class="coming">Coming soon</div>
-
+<h3>Thumbnail Text</h3>
+<div id="thumb" class="result"></div>
 </div>
 
 </div>
