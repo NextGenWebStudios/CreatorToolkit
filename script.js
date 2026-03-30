@@ -1,47 +1,15 @@
-fetch("data.json")
-.then(response => response.json())
-.then(data => {
+function generateHook(){
 
-const container = document.getElementById("tools")
+const hooks = [
+"You won't believe this trick...",
+"This changed everything...",
+"Stop scrolling right now...",
+"Nobody talks about this...",
+"This secret will shock you..."
+];
 
-data.forEach(tool => {
+const random = hooks[Math.floor(Math.random()*hooks.length)];
 
-const div = document.createElement("div")
-
-div.innerHTML = `
-
-<h2>${tool.name}</h2>
-
-<p>${tool.description}</p>
-
-<button onclick="generate('${tool.name}')">
-
-Open Tool
-
-</button>
-
-`
-
-container.appendChild(div)
-
-})
-
-})
-
-function generate(name){
-
-const ideas = [
-
-"Hidden features most people miss",
-"Top 5 apps creators must know",
-"You won’t believe this trick",
-"This changed my YouTube growth",
-"Secrets creators never share"
-
-]
-
-const random = Math.floor(Math.random()*ideas.length)
-
-alert(name + " result:\n\n" + ideas[random])
+document.getElementById("hook").innerText = random;
 
 }
