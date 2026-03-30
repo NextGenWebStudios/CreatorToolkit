@@ -1,12 +1,14 @@
 function generateHook(){
 
+const topic = document.getElementById("topic").value;
+
 const hooks = [
 
-"You won't believe this trick...",
-"This secret changed everything...",
-"Stop scrolling if you want more views...",
-"99% of creators don't know this...",
-"This hack will blow your mind..."
+"You won't believe this about "+topic,
+"Stop scrolling if you care about "+topic,
+"99% of people don't know this about "+topic,
+"This "+topic+" trick will shock you",
+"The truth about "+topic+" nobody tells you"
 
 ];
 
